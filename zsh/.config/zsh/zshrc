@@ -1,0 +1,36 @@
+#!/bin/zsh
+export DEFAULT_USER=`whoami`
+setopt AUTO_CD              # Go to folder path without using cd.
+
+
+# +---------+
+# | HISTORY |
+# +---------+
+setopt EXTENDED_HISTORY          # Write the history file in the ':start:elapsed;command' format.
+setopt SHARE_HISTORY             # Share history between all sessions.
+setopt HIST_EXPIRE_DUPS_FIRST    # Expire a duplicate event first when trimming history.
+setopt HIST_IGNORE_DUPS          # Do not record an event that was just recorded again.
+setopt HIST_IGNORE_ALL_DUPS      # Delete an old recorded event if a new event is a duplicate.
+setopt HIST_FIND_NO_DUPS         # Do not display a previously found event.
+setopt HIST_IGNORE_SPACE         # Do not record an event starting with a space.
+setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history file.
+setopt HIST_VERIFY               # Do not execute immediately upon history expansion.
+autoload -U compinit; compinit
+
+# ALIASES
+source $ZDOTDIR/aliases.zsh
+
+# functions
+source $ZDOTDIR/functions.zsh
+
+# PROMPT
+source $ZDOTDIR/prompt.zsh
+
+# plugins
+source $ZDOTDIR/plugins/bd.zsh
+source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZDOTDIR/plugins/zsh-z/zsh-z.plugin.zsh
+fpath=($ZDOTDIR/plugins/zsh-completions/src $fpath)
+
+
