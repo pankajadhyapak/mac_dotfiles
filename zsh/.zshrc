@@ -1,5 +1,5 @@
 export DEFAULT_USER=`whoami`
-export DOTFILES="$HOME/dotfiles"
+export DOTFILES="$HOME/.dotfiles"
 export CONFIG_HOME="$HOME/.config"
 export EDITOR="nvim"
 export VISUAL="nvim"
