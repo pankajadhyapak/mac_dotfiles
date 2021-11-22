@@ -71,12 +71,3 @@ autoload -U compinit; compinit -d "$ZSH_COMPDUMP"
 fpath=($ZDOTDIR/prompt $fpath)
 autoload -U promptinit && promptinit
 prompt purity
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/pankaj/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/pankaj/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/pankaj/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/pankaj/google-cloud-sdk/completion.zsh.inc'; fi
-
-# eval "$(starship init zsh)"
-# SPACESHIP_GIT_PREFIX="${SPACESHIP_GIT_PREFIX=''}"
