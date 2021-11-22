@@ -14,7 +14,6 @@ setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history
 setopt HIST_VERIFY               # Do not execute immediately upon history expansion.
 export HISTSIZE=32768            # Larger bash history (allow 32³ entries; default is 500)
 export HISTFILESIZE=$HISTSIZE
-export HISTFILE="$ZDOTDIR/.zhistory"
 
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
@@ -66,7 +65,7 @@ bindkey -M emacs '^[[1;5D' backward-word
 bindkey -M viins '^[[1;5D' backward-word
 bindkey -M vicmd '^[[1;5D' backward-word
 
-autoload -U compinit; compinit
+autoload -U compinit; compinit -d "$ZSH_COMPDUMP"
 
 # PROMPT
 fpath=($ZDOTDIR/prompt $fpath)
