@@ -6,4 +6,4 @@
 
 3. ```git clone --recursive  git@github.com:pankajadhyapak/.dotfiles.git```
 
-4. ``run ./install.sh``
+4. ```./install.sh```
