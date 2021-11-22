@@ -1,0 +1,10 @@
+{
+    "require": {
+        "friendsofphp/php-cs-fixer": "@stable",
+        "phpstan/phpstan": "@stable",
+        "spatie/phpunit-watcher": "@stable",
+        "laravel/installer": "@stable",
+        "laravel/valet": "@stable",
+        "psy/psysh": "@stable"
+    }
+}
