@@ -1,0 +1,25 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "Packages/Gruvbox Dark/gruvbox.tmTheme",
+	"close_windows_when_empty": true,
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "FiraCode Nerd Font",
+	"font_size": 16,
+	"hot_exit": false,
+	"line_padding_bottom": 8,
+	"line_padding_top": 8,
+	"save_on_focus_lost": true,
+	"scroll_past_end": true,
+	"translate_tabs_to_spaces": true,
+	"spell_check": true,
+	"trim_trailing_white_space_on_save": true,
+	"added_words":
+	[
+		"auth",
+		"middleware",
+	],
+	"theme": "Adaptive.sublime-theme",
+}
