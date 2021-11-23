@@ -1,0 +1,13 @@
+[{
+    "keys": ["ctrl+shift+f"],
+    "command": "js_format",
+}, {
+    "keys": ["tab"],
+    "command": "insert",
+    "args": {
+        "characters": "\t"
+    },
+    "context": [{
+        "key": "setting.anf_panel"
+    }]
+}]
