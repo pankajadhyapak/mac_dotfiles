@@ -1,6 +1,7 @@
 {
 	"ignored_packages":
 	[
+		"Markdown",
 		"Vintage",
 	],
 	"color_scheme": "Packages/Gruvbox Dark/gruvbox.tmTheme",
@@ -16,6 +17,8 @@
 	"translate_tabs_to_spaces": true,
 	"spell_check": true,
 	"trim_trailing_white_space_on_save": true,
+	"default_encoding": "UTF-8",
+    "detect_indentation": true,
 	"added_words":
 	[
 		"auth",

@@ -6,8 +6,12 @@
 	[
 		"A File Icon",
 		"AdvancedNewFile",
+		"BracketHighlighter",
+		"Color Highlighter",
 		"Emmet",
 		"Gruvbox Dark",
 		"JsFormat",
+		"MarkdownEditing",
+		"SideBarEnhancements",
 	],
 }
