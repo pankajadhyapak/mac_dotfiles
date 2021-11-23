@@ -4,7 +4,7 @@
 		"Markdown",
 		"Vintage",
 	],
-	"color_scheme": "Packages/Gruvbox Dark/gruvbox.tmTheme",
+	"color_scheme": "gruvbox (Dark) (Hard) NDC.sublime-color-scheme",
 	"close_windows_when_empty": true,
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "FiraCode Nerd Font",

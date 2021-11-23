@@ -6,10 +6,9 @@
 	[
 		"A File Icon",
 		"AdvancedNewFile",
-		"BracketHighlighter",
 		"Color Highlighter",
 		"Emmet",
-		"Gruvbox Dark",
+		"gruvbox",
 		"JsFormat",
 		"MarkdownEditing",
 		"SideBarEnhancements",
