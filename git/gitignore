@@ -31,3 +31,4 @@ bin/
 .phpunit.result.cache
 .graphqlrc.json
 .eslintcache
+observer.rb

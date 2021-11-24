@@ -11,6 +11,8 @@
 		"gruvbox",
 		"JsFormat",
 		"MarkdownEditing",
+		"Package Control",
 		"SideBarEnhancements",
 	],
+	"bootstrapped": true,
 }
