@@ -8,7 +8,7 @@
 	"close_windows_when_empty": true,
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "FiraCode Nerd Font",
-	"font_size": 16,
+	"font_size": 17,
 	"hot_exit": false,
 	"line_padding_bottom": 8,
 	"line_padding_top": 8,

@@ -68,3 +68,7 @@ autoload -U compinit; compinit -d "$ZSH_COMPDUMP"
 fpath=($ZDOTDIR/prompt $fpath)
 autoload -U promptinit && promptinit
 prompt purity
+
+# FNM
+eval "$(fnm env)"
+

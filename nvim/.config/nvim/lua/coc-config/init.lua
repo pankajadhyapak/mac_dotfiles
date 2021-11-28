@@ -3,7 +3,6 @@ local vim = vim
 local api = vim.api
 local fn = vim.fn
 
-
 vim.g.coc_global_extensions = {
     "coc-go",
     "coc-json",
@@ -30,7 +29,6 @@ vim.g.coc_global_extensions = {
     "coc-spell-checker",
     "coc-cspell-dicts"
 }
-
 
 local autocmds = {
     coc_go = {}
@@ -64,7 +62,6 @@ api.nvim_set_keymap("i", "<S-TAB>", 'pumvisible() ? "<C-P>" : "<C-H>"', {expr = 
 -- api.nvim_set_keymap("i", "<cr>", 'pumvisible() ? coc#_select_confirm() : "<CR>"', {expr = true})
 api.nvim_set_keymap("i", "<cr>", 'pumvisible() ? "<c-y>" : "<CR>"', {expr = true})
 
-
 api.nvim_set_keymap("n", "<leader>ll", "<Plug>(coc-codelens-action)", {noremap = true})
 
 -- using
@@ -90,7 +87,6 @@ U.map("n", "]g", "<Plug>(coc-diagnostic-next)", {noremap = false})
 U.map("n", "<leader>Y", ":<C-u>CocList -A --normal yank<cr>", {noremap = false})
 
 U.map("i", "<c-j>", "<Plug>(coc-snippets-expand-jump)", {noremap = false})
-
 
 -- api.nvim_set_keymap("n", "<leader>gi", ":CocCommand git.chunkInfo<cr>", {noremap = true})
 

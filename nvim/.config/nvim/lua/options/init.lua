@@ -1,9 +1,9 @@
-vim.cmd('filetype plugin indent on')
-vim.o.shortmess = vim.o.shortmess .. 'c'
+vim.cmd("filetype plugin indent on")
+vim.o.shortmess = vim.o.shortmess .. "c"
 vim.o.hidden = true
-vim.o.whichwrap = 'b,s,<,>,[,],h,l'
+vim.o.whichwrap = "b,s,<,>,[,],h,l"
 vim.o.pumheight = 10
-vim.o.fileencoding = 'utf-8'
+vim.o.fileencoding = "utf-8"
 vim.o.cmdheight = 2
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -16,7 +16,7 @@ vim.o.writebackup = false
 vim.o.updatetime = 300
 vim.o.timeoutlen = 100
 vim.o.clipboard = "unnamedplus"
-vim.g.noswapfile= true
+vim.g.noswapfile = true
 vim.o.ignorecase = true
 vim.o.sidescrolloff = 5
 vim.o.mouse = "a"
@@ -25,7 +25,6 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 vim.o.cursorline = true
 vim.wo.signcolumn = "yes"
-
 
 -- Search
 vim.o.ignorecase = true -- Ignore case when searching...
@@ -62,25 +61,23 @@ vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_tutor_mode_plugin = 1
 vim.g.loaded_remote_plugins = 1
 
-
 -- Y yank until the end of line  (note: this is now a default on master)
-vim.api.nvim_set_keymap('n', 'Y', 'y$', { noremap = true })
-
---Map blankline
-vim.g.indent_blankline_char = '┊'
-vim.g.indent_blankline_filetype_exclude = { 'help', 'packer' }
-vim.g.indent_blankline_buftype_exclude = { 'terminal', 'nofile' }
-vim.g.indent_blankline_char_highlight = 'LineNr'
-vim.g.indent_blankline_show_trailing_blankline_indent = false
-
+vim.api.nvim_set_keymap(
+    "n",
+    "Y",
+    "y$",
+    {
+        noremap = true
+    }
+)
 
 -- Highlight on yank
 vim.api.nvim_exec(
-  [[
+    [[
   augroup YankHighlight
     autocmd!
     autocmd TextYankPost * silent! lua vim.highlight.on_yank()
   augroup end
 ]],
-  false
+    false
 )

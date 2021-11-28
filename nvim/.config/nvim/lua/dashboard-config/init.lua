@@ -13,14 +13,14 @@
 -- ]
 
 vim.g.startify_lists = {
-    { type =  'bookmarks', header = {'   Bookmarks'}      },
-    { type = "files",     header =  {'   Files'}            }
+    {type = "bookmarks", header = {"   Bookmarks"}},
+    {type = "files", header = {"   Files"}}
 }
 
 vim.g.startify_bookmarks = {
-            '/Users/pankaj/Documents/code/frontend-symfony/cloud-run',
-            '/Users/pankaj/Documents/code/frontend-symfony',
-            '/Users/pankaj/Documents/sites',
-            { c = '~/.config' },
-            { i = '~/.config/nvim' },
-            }
+    "/Users/pankaj/Documents/code/frontend-symfony/cloud-run",
+    "/Users/pankaj/Documents/code/frontend-symfony",
+    "/Users/pankaj/Documents/sites",
+    {c = "~/.config"},
+    {i = "~/.config/nvim"}
+}

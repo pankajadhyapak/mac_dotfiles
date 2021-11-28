@@ -4,14 +4,21 @@
 
 ## HYPER == SHIFT + CMD + ALT + OPTION
 
+# focus window
+cmd - down : yabai -m window --focus south
+cmd - up : yabai -m window --focus north
+cmd - left : yabai -m window --focus west
+cmd - right : yabai -m window --focus east
+
 ## Quickly restart the yabai launch agent
 ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 ## Close active application
-hyper - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+hyper - q : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
 ## open terminal
-hyper - return : /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl
+hyper - return : open -n -a alacritty
+hyper - b : open -a 'Google Chrome'
 
 hyper - 1 : yabai -m space --focus 1
 hyper - 2 : yabai -m space --focus 2
@@ -23,3 +30,25 @@ hyper - 7 : yabai -m space --focus 7
 hyper - 8 : yabai -m space --focus 8
 hyper - 9 : yabai -m space --focus 9
 hyper - 0 : yabai -m space --focus 10
+
+# Shortcuts
+hyper - a : yabai -m space --focus 6 #terminal
+hyper - e : yabai -m space --focus 3 #sublime
+
+# send window to desktop and follow focus
+ctrl + shift - 1 : yabai -m window --space  1; yabai -m space --focus 1
+ctrl + shift - 2 : yabai -m window --space  2; yabai -m space --focus 2
+ctrl + shift - 3 : yabai -m window --space  3; yabai -m space --focus 3
+ctrl + shift - 4 : yabai -m window --space  4; yabai -m space --focus 4
+ctrl + shift - 5 : yabai -m window --space  5; yabai -m space --focus 5
+ctrl + shift - 6 : yabai -m window --space  6; yabai -m space --focus 6
+ctrl + shift - 7 : yabai -m window --space  7; yabai -m space --focus 7
+ctrl + shift - 8 : yabai -m window --space  8; yabai -m space --focus 8
+ctrl + shift - 9 : yabai -m window --space  9; yabai -m space --focus 9
+ctrl + shift - 0 : yabai -m window --space  10; yabai -m space --focus 10
+
+# Resize window
+hyper - left : yabai -m window --resize left:-50:0;  yabai -m window --resize right:-50:0
+hyper - down : yabai -m window --resize bottom:0:50;  yabai -m window --resize top:0:50
+hyper - up : yabai -m window --resize top:0:-50;   yabai -m window --resize bottom:0:-50
+hyper - right : yabai -m window --resize right:50:0;  yabai -m window --resize left:50:0
