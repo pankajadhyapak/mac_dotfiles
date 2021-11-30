@@ -17,8 +17,8 @@ ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 hyper - q : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
 ## open terminal
-hyper - return : open -n -a alacritty
-hyper - b : open -a 'Google Chrome'
+hyper - return : open -n -a kitty
+#hyper - b : open -a 'Google Chrome'
 
 hyper - 1 : yabai -m space --focus 1
 hyper - 2 : yabai -m space --focus 2
@@ -34,6 +34,18 @@ hyper - 0 : yabai -m space --focus 10
 # Shortcuts
 hyper - a : yabai -m space --focus 6 #terminal
 hyper - e : yabai -m space --focus 3 #sublime
+ctrl + alt - s : yabai -m space --focus 7 #slack
+ctrl + alt - a : yabai -m space --focus 6 #terminal
+ctrl + alt - d : yabai -m space --focus 2 #editors
+ctrl + alt - z : yabai -m space --focus 1 #browser
+ctrl + alt - x : yabai -m space --focus 3 #sublime
+ctrl + alt - c : yabai -m space --focus 4 #db
+
+
+# layouts
+hyper - b : yabai -m space --balance
+hyper - t : yabai -m window --toggle split
+hyper - f : yabai -m window --toggle float
 
 # send window to desktop and follow focus
 ctrl + shift - 1 : yabai -m window --space  1; yabai -m space --focus 1
