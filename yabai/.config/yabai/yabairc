@@ -82,16 +82,23 @@ yabai -m rule --add app="Spark"  space=9
 
 
 # ignore apps
-yabai -m rule --add app="^System Preferences$" manage=off
-yabai -m rule --add app="^Karabiner-Elements$" manage=off
-yabai -m rule --add app="^Karabiner-EventViewer$" manage=off
-yabai -m rule --add app="^Finder$" manage=off
-yabai -m rule --add app="^Alfred Preferences$" manage=off
-yabai -m rule --add app="^Disk Utility$" manage=off
-yabai -m rule --add app="^System Information$" manage=off
-yabai -m rule --add app="^Activity Monitor$" manage=off
-yabai -m rule --add app="^Path Finder$" manage=off
-yabai -m rule --add app="^Docker Desktop$" manage=off
+
+# regex that matches JetBrains apps
+ignoreApps='^(System Preferences|Karabiner-Elements|Karabiner-EventViewer|Finder|Alfred Preferences|Disk Utility|System Information|Activity Monitor|Path Finder|Docker Desktop|App Store)$'
+
+# float all JetBrains apps
+yabai -m rule --add app="${ignoreApps}" manage=off
+
+# yabai -m rule --add app="^System Preferences$" manage=off
+
+
+
+# Some Goland settings, in case you are using it. float Goland Preference panes
+yabai -m rule --add app="PhpStorm" manage=off
+yabai -m rule --add app="PhpStorm" title=".*\[(.*)\].*" manage=on
+
+yabai -m rule --add app="GoLand" manage=off
+yabai -m rule --add app="GoLand" title=".*\[(.*)\].*" manage=on
 
 # status bar stuff
 yabai -m signal --add event=space_changed \

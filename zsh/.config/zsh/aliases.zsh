@@ -7,7 +7,7 @@ alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
 alias cleardns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say cache flushed"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias ez="subl $ZDOTDIR/.zshrc"
-alias sz="source $ZDOTDIR/.zshrc"
+alias sz="source ~/.zshrc"
 alias art="php artisan"
 alias code="cd ~/Documents/code"
 alias sites="cd ~/Documents/sites"
@@ -18,7 +18,7 @@ alias essh="subl ~/.ssh"
 alias helm2="/usr/local/opt/helm@2/bin/helm"
 alias youtdl='youtube-dl -o "~/Documents/Youtube_Videos/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" --all-subs --external-downloader aria2c'
 alias n="nvim"
-
+alias nc="n ~/.config"
 # GIT
 # --------------------------------------------
 alias gs="git status"
