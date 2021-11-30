@@ -4,7 +4,7 @@
 		"Markdown",
 		"Vintage",
 	],
-	"color_scheme": "gruvbox (Dark) (Hard) NDC.sublime-color-scheme",
+	"color_scheme": "Packages/Colorsublime-Themes/rose-pine.tmTheme",
 	"close_windows_when_empty": true,
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "FiraCode Nerd Font",
