@@ -6,6 +6,7 @@ alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-dire
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
 alias cleardns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say cache flushed"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias c="/usr/local/bin/code"
 alias ez="subl $ZDOTDIR/.zshrc"
 alias sz="source ~/.zshrc"
 alias art="php artisan"
